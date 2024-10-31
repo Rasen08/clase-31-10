@@ -1,0 +1,17 @@
+// nesting - anidación
+.header-intro{
+    .menu{
+        background-color: transparent;
+        li{
+            a{
+                font-family: $mainFont;
+                &:hover{
+                    color: $secondaryColor;
+                }
+            }
+        }
+        img{
+            width: 120px;
+        }
+    }
+}

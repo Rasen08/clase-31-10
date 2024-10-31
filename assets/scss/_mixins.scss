@@ -1,0 +1,13 @@
+// mixins
+@mixin texts($color,$size,$weight){
+    font-family: $mainFont;
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: 1.4em;
+    text-align: left;
+}
+@mixin border($style,$color,$width,$radius){
+    border: $style $color $width $radius;
+    padding: 2px;
+}

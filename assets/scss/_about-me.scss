@@ -1,0 +1,20 @@
+.aboutme{
+    width: 70%;
+    margin: 50px auto;
+    color: $secondaryColor;
+    &__title{
+        font-family: $mainFont;
+        margin-bottom: 5px;
+    }
+    &__footer--green{
+        background-color: $mainColor;
+        height: 40px;
+        a{
+            text-decoration: none;
+            svg{
+                fill: $white;
+                width: 20px;
+            }
+        }
+    }
+}

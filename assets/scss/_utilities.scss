@@ -1,0 +1,21 @@
+// clases de textos
+.text-main{
+    @include texts(#000000,1.2em,400);
+}
+.text-dark{
+    @include texts(gray,1em,500);
+}
+.text-green{
+    @include texts($mainColor,1.1em,500);
+}
+.border-radius-one{
+    @include border(dotted,pink,2px,10px);
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+// clases para bordes
+.border-top-green{
+    
+}
+
+// clases para gradients

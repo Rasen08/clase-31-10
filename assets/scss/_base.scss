@@ -1,0 +1,53 @@
+// vars
+$mainColor: rgb(11, 169, 116);
+$secondaryColor: rgb(13, 49, 147);
+$keyColor: rgb(213, 115, 199);
+$white: rgb(226, 226, 226);
+$black: rgb(24, 24, 24);
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+$mainFont: "Nunito Sans", sans-serif;
+$secondaryFont: verdana;
+
+body{
+    background-image: url(../img/cv--headercut.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+p,
+span,
+li,
+a{
+    font-family: $secondaryFont;
+}
+
+h1,
+h2,
+h3,
+h4{
+    font-family: $mainFont;
+}
+
+// btns
+.btn-main{
+    max-width: 300px;
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:$black;
+    border-radius: 3px;
+    border: solid 1px $secondaryColor;
+    margin: auto;
+    text-decoration: none;
+    &:hover{
+        background-color: $black;
+        color: $white;
+    }
+}
+
+.btn-green{
+    @extend .btn-main;
+    background-color: $mainColor;
+}
